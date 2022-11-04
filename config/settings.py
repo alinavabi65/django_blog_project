@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'blog',
     'accounts',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'posts_list'
 LOGOUT_REDIRECT_URL = 'posts_list'
+
+CRISPY_TEMPLATE_PACK = 'Bootstrap4'
