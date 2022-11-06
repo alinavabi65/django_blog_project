@@ -10,7 +10,6 @@ from .models import post
 from .forms import PostForm
 
 
-
 class PostListView(generic.ListView):
     template_name = 'blog/posts_list.html'
     context_object_name = 'posts_list'

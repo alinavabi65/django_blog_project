@@ -4,7 +4,7 @@ from .models import post
 
 @admin.register(post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'outher', 'status', 'datetime_modified')
+    list_display = ('title', 'status', 'datetime_modified', 'image')
 
 
 # admin.site.register(post, PostAdmin)
