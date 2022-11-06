@@ -30,10 +30,10 @@
         </ul>
         <div class="mx-2 text-danger">
             {% if user.is_authenticated %}
-                Welcom {{ user.username }} | <a class="text-danger" href="{% url 'logout' %}">Logout</a>
+                Welcom {{ user.username }}| <a class="text-success" href="{% url 'logout' %}">Logout</a>
             {% else %}
-                <a class="text-danger" href="{% url 'login' %}">Log in</a> |
-                <a class="text-danger" href="{% url 'signup' %}">Sign Up</a>
+                <a class="text-success" href="{% url 'login' %}">Log in</a> |
+                <a class="text-success" href="{% url 'signup' %}">Sign Up</a>
             {% endif %}
         </div>
     </div>
@@ -44,7 +44,7 @@
     <div class="row py-3">
         <div class="col-md-8 col-md-10 mx-auto">
             <h3 class="my-4 mt-3 text-white">Welcome to Python and Django Blog</h3>
-            <p class="text-light">We share python and django tips and tricks here</p>
+            <p class="text-light">The images used are from the <a href="https://edition.cnn.com/">https://edition.cnn.com/</a>website.</p>
         </div>
     </div>
 </div>
